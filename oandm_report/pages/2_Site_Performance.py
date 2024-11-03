@@ -1,6 +1,10 @@
 import streamlit as st
 from graphs.import_export import import_export_bars_with_av
 from graphs.cycles import warranty_vs_actual_cycles, warrant_vs_actual_cycles_table
+from main import check_password
+if not check_password:
+    st.stop()
+
 
 st.title("Site Performance")
 st.header("Site Performance, Import and Export and Availability")

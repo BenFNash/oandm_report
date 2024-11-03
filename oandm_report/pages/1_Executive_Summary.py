@@ -1,6 +1,9 @@
 import streamlit as st
 from graphs.import_export import import_export_bars, import_export_summary 
 from PIL import Image
+from main import check_password
+if not check_password:
+    st.stop()
 
 st.title("Executive Summary")
 st.header("Dashboard")
