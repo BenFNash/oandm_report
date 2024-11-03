@@ -20,6 +20,8 @@ Commissioning.
 st.header("Monthly Operation Report")
 st.write("During the month of September the current optimiser (Statkraft) did not conduct any trades.")
 
+st.header("Energy Charged and Discharged (Cumulative Cycles)")
+
 warrant_vs_actual_cycles_table()
 warranty_vs_actual_cycles()
 st.write("""
