@@ -1,0 +1,9 @@
+credentials:
+  usernames:
+    jsmith:
+      email: test@gmail.com
+      password: harrynash# To be replaced with hashed password
+cookie:
+  expiry_days: 30
+  key: random_signature_key # Must be string
+  name: random_cookie_name
