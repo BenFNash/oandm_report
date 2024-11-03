@@ -31,9 +31,9 @@ if not check_password():
 
 if check_password():
     pg = st.navigation([
-        st.Page("pages/1_Executive_Summary.py"),
-        st.Page("pages/2_Site_Performance.py"),
-        st.Page("pages/3_Issues_and_Status.py")
+        st.Page("sections/1_Executive_Summary.py"),
+        st.Page("sections/2_Site_Performance.py"),
+        st.Page("sections/3_Issues_and_Status.py")
     ])
     pg.run()
 
