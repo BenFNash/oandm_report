@@ -10,15 +10,17 @@ st.title("Site Performance")
 st.header("Site Performance, Import and Export and Availability")
 import_export_bars_with_av()
 
-st.write("""
-         The above chart is representative of September’s Import, Export & Availability. The days showing little to no Import &
-Export are due to changing of Optimiser. Availability down by 1.2% (17/09/2024) can be because of O&M works and BESS
-being put into sleep mode briefly. No trading is being conducted during this period of changing Optimiser and Hot
-Commissioning.
-         """)
+st.write(st.session_state["captions"]["import_export"])
+#     """
+#          The above chart is representative of September’s Import, Export & Availability. The days showing little to no Import &
+# Export are due to changing of Optimiser. Availability down by 1.2% (17/09/2024) can be because of O&M works and BESS
+# being put into sleep mode briefly. No trading is being conducted during this period of changing Optimiser and Hot
+# Commissioning.
+#          """)
 
 st.header("Monthly Operation Report")
-st.write("During the month of September the current optimiser (Statkraft) did not conduct any trades.")
+st.write(st.session_state["captions"]["operations_report"])
+# st.write("During the month of September the current optimiser (Statkraft) did not conduct any trades.")
 
 st.header("Energy Charged and Discharged (Cumulative Cycles)")
 

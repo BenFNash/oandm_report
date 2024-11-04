@@ -10,12 +10,13 @@ st.header("Dashboard")
 import_export_bars()
 import_export_summary()
 st.header("Overview")
-st.write("""
-This report has been prepared by BOOM Power Limited in its capacity as the O&M Managers.
-Bacup Battery Energy Storage System has been operating since May 2024. Boom Power Ltd are the appointed O&M Contractor.
-All issues have been corrected with the Huawei BESS and we are awaiting completion of remedial works to dismiss planning
-conditions related to fire water retention, during this period we are conducting hot commissioning to fully test the system.
-""")
+st.write(st.session_state["captions"]["overview"])
+#     """
+# This report has been prepared by BOOM Power Limited in its capacity as the O&M Managers.
+# Bacup Battery Energy Storage System has been operating since May 2024. Boom Power Ltd are the appointed O&M Contractor.
+# All issues have been corrected with the Huawei BESS and we are awaiting completion of remedial works to dismiss planning
+# conditions related to fire water retention, during this period we are conducting hot commissioning to fully test the system.
+# """)
 st.header("Project Overview")
 
 data = {
@@ -40,7 +41,8 @@ st.header("Average Weather Temperature")
 # image_path = "weather_report.png"  # Replace with the path to your PNG file
 # st.image(image_path)
 
-st.write("""Average temperature for Bacup Lancashire in September, this can
-affect auto consumption through the extra use of aircon and the HVAC
-units.
-""")
+st.write(st.session_state["captions"]["avg_weather"])
+#          """Average temperature for Bacup Lancashire in September, this can
+# affect auto consumption through the extra use of aircon and the HVAC
+# units.
+# """)
